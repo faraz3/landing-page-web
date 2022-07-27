@@ -1,0 +1,95 @@
+body {
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.judul {
+    font-size: 46px;
+    letter-spacing: 1px;
+}
+.desk {
+    font-size: 15px;
+    opacity: .9;
+}
+.poto h3 {
+    margin-top: -50px;
+    position: relative;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+.poto img{
+    border-radius: 12px;
+    filter: brightness(.6);
+}
+.foto img{
+    border-radius: 12px;
+    filter: saturate(2);
+}
+.tnr {
+    font-family: 'Times New Roman', Times, serif;
+}
+.poppin {
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    z-index: 99;
+}
+nav ul {
+    font-size: 20px;
+}
+.home {
+    background-image: url(home-page.jpg);
+    height: 105vh;
+    background-size: cover;
+}
+.pelapis {
+    background-color: rgba(0, 0, 0, .5);
+    height: 105vh;
+}
+.home h1 {
+    font-size: 78px;
+}
+.home .home_text {
+    padding: 200px 0;
+    height: 565px;
+}
+.home p {
+    width: 605px;
+    font-size: 22px;
+    letter-spacing: 2.5px;
+}
+.home button {
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+#border {
+    border-bottom: 3px solid #3498DB;
+    width: fit-content;
+}
+.mr {
+    margin-right: 200px;
+}
+#about-us img {
+    border-radius: 16px;
+}
+#review h2 {
+    color: #111750;
+    opacity: .8;
+}
+#review p{
+    font-size: 18px;
+}
+#review h4 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+#review h5 {
+    letter-spacing: 2px;
+}
+#guide p {
+    font-size: 12px;
+}

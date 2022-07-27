@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#major">Program</a></li>
+            <li><a href="#keunggulan">Keunggulan</a></li>
+            <li><a href="#aq">P&J</a></li>
+        </ul>
+    </nav>
+
+    <!-- home -->
+    <section id="home" class="home">
+        <div class="pelapis">
+            <div class="kotak">
+                <img src="asset/logo-ikon.png" alt="">
+                <h1>SMK KESEHATAN ANNISA</h1>
+                <p>"Lorem ipsum dolor sit amet consectetur."</p>
+                <button><i class="fa-regular fa-id-badge"></i> DAFTAR SEKARANG</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- profil -->
+    <section id="profil" class="profil">
+        <h1>Selamat Datang di SMK Kesehatan Annisa</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem quae est.</p>
+        <div class="kontenprofil">
+            <div class="kepsek">
+                <img src="asset/kepsek.jpg" alt="" width="300px">
+                <p>Kepala Sekolah</p>
+                <h2>Lorem, ipsum dolor.</h2>
+            </div>
+            <iframe width="50%" height="320px"
+            src="https://www.youtube.com/embed/XrmkRbIV8Vs">
+        </iframe>
+        </div>
+    </section>
+
+    <!-- Major -->
+    <section id="major" class="major">
+        <h1>Program Keahlian</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="kotaks">
+            <div class="kotak">
+                <img src="asset/farmasi-klinis.png" alt="">
+                <i class="fa-solid fa-tablets fa-4x fa-fade "></i>
+                <h2>Farmasi Klinis & Komunitas</h2>
+                <button>Selengkapnya</button>
+            </div>
+
+            <div class="kotak">
+                <img src="asset/farmasi-industri-dpn.png" alt="">
+                <i class="fa-solid fa-capsules fa-4x fa-fade "></i>
+                <h2>Farmasi Industri</h2>
+                <button>Selengkapnya</button>
+            </div>
+
+            <div class="kotak">
+                <img src="asset/kecantikan.png" alt="">
+                <i class="fa-solid fa-palette fa-4x fa-fade "></i>
+                <h2>Tata Kecantikan</h2>
+                <button>Selengkapnya</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section id="keunggulan" class="keunggulan">
+        <h1>Keunggulan Kami</h1>
+        <p>Beberapa Point keunggulan dari SMK Annisa</p>
+    
+        <div class="kotaks">
+            <!-- tak1 -->
+            <div class="kotak">
+                <div class="yey">
+                    <i class="fa-solid fa-stopwatch"></i>
+                </div>
+                <h3>Berkarakter</h3>
+                <p>Kami Sekolah yang mengutamakan penumbuhan karakter pribadi & kebangsaan</p>
+            </div>
+            <!-- tak2 -->
+            <div class="kotak">
+                <div class="yey">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3>Agamis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quos!</p>
+            </div>
+            <!-- tak3 -->
+            <div class="kotak">
+                <div class="yey">
+                    <i class="fa-solid fa-temperature-high"></i>
+                </div>
+                <h3>High Skill</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quidem!</p>
+            </div>
+            <!-- tak4 -->
+            <div class="kotak">
+                <div class="yey">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <h3>Fasilitas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AQ -->
+    <section id="aq" class="aq">
+        <div class="head">
+            <h1>Pertanyaan & Jawaban</h1>
+            <p>Berikut adalah point point pertanyaan yang membantu menjawab mengapa harus memilih SMK Kesehatan Annisa</p>
+        </div>
+        <div class="question">
+            <ul>
+                <li onclick="show1()" class="dropbtn">
+                    <i class="fa-solid fa-caret-right"></i> Mengapa Harus SMK Kesehatan Annisa?
+                    <div class="dropdown-content" id="myDropdown1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, distinctio! Fugiat corporis labore, quis recusandae placeat consequuntur provident tenetur hic, unde molestias iste asperiores impedit!</p>
+                    </div>
+                </li>
+                <li onclick="show2()" class="dropbtn">
+                    <i class="fa-solid fa-caret-right"></i> Mengapa Harus SMK Kesehatan Annisa?
+                    <div class="dropdown-content" id="myDropdown2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, distinctio! Fugiat corporis labore, quis recusandae placeat consequuntur provident tenetur hic, unde molestias iste asperiores impedit!</p>
+                    </div>
+                </li>
+                <li onclick="show3()" class="dropbtn">
+                    <i class="fa-solid fa-caret-right"></i> Mengapa Harus SMK Kesehatan Annisa?
+                    <div class="dropdown-content" id="myDropdown3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, distinctio! Fugiat corporis labore, quis recusandae placeat consequuntur provident tenetur hic, unde molestias iste asperiores impedit!</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="gambar">
+                <img src="asset/rapat-ortu.jpg" id="1">
+                <img src="asset/ujikom.jpg" id="2">
+            </div>
+        </div>
+    </section>
+
+    <!--partner-->
+    <section class="partner">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias.</p>
+        <div class="img-flex">
+              <img src="asset/rs-sentra-medika-150x150.jpg" alt="">
+              <img src="asset/RS-brimob-150x150.png" alt="">
+              <img src="asset/rs-tugu-ibu-150x150.jpg" alt="">
+              <img src="asset/kimia-farma-150x150.jpg" alt="">
+              <img src="asset/rs-annisa-citereup-150x150.jpg" alt="">
+              <img src="asset/RS-islambogor-150x150.png" alt="">
+              <img src="asset/rs-kesdam-cijantung-ok-150x150.jpg" alt="">
+              <img src="asset/rsud-cibinong-150x150.jpg" alt="">
+              <img src="asset/rs-ketergantungan-obat-150x150.jpg" alt="">
+              <img src="asset/rs-citramedika-150x150.png" alt="">
+              <img src="asset/rs-mh-thamrin-150x150.png" alt="">
+        </div>
+        <div class="button">
+            <button><i class="fa-regular fa-id-badge"></i> DAFTAR SEKARANG</button>
+        </div>
+    </section>
+
+<!--lokasi-->
+    <div class="lokasi">
+        <div class="container">
+            <div class="left">
+                <h2>SMK Kesehatan Annisa</h2>
+                <p>Jl. Raya Keranggan Np.25, Purpasari,</p>
+                <p>Kec. Citeurep, Bogor, Jawa Barat 16810, Tlp. (021) 87916022</p>
+                <div class="sosmed">
+                    <div class="icon" id="fb">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </div>
+                    <div class="icon" id="yt">
+                        <i class="fa-brands fa-youtube fa-xl"></i>
+                    </div>
+                    <div class="icon" id="ig">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </div>
+                    <div class="icon" id="wa">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0741023772575!2d106.86781161436214!3d-6.384437564224024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebaff005f277%3A0x9fcd41028665eea8!2sSMK%20Taruna%20Bhakti%20Depok!5e0!3m2!1sid!2sid!4v1649319274052!5m2!1sid!2sid" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <p>smkkesehatanannisa @2022 designed by kelompok1</p>
+    </div>
+
+<div class="naik">
+    <a href="#home">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

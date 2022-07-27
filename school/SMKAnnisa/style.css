@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&family=Roboto&family=Seaweed+Script&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    --font-lemonada: 'Lemonada', cursive;
+    --color-ijo:#00A711;
+    --color-ijo-muda:#5BCE75;
+    --font-roboto: 'Roboto', sans-serif;
+    --color-ijo-button: #0b9f1a;
+    margin: 0;
+}
+
+section, .container {
+    width: 75%;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--font-lemonada);
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+    font-family: var(--font-roboto);
+    color: #7A7A7A;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 20px 4rem;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--font-roboto);
+    color: white;
+}
+
+.scrolling-active {
+    background-color: gray;
+    transition-duration: 0.8s;
+    opacity: 0.8;
+}
+
+/* Home */
+
+.home {
+    background-image: url(asset/gedung33.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.pelapis {
+    background-image: linear-gradient(120deg, #000000b0 40%, #004917bb 100%);
+}
+
+.home .pelapis .kotak {
+    padding: 250px 0;
+}
+
+.home .pelapis .kotak img {
+    width: 150px;
+}
+
+.home .pelapis .kotak h1 {
+    font-family: var(--font-roboto);
+    font-size: 50px;
+    margin-top: 3rem;
+}
+
+.home .pelapis .kotak>p {
+    margin-bottom: 3rem;
+    font-family: 'Seaweed Script', cursive;
+    color: white;
+    font-size: 28px;
+}
+
+.home .pelapis .kotak button {
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--color-ijo-button);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.home .pelapis .kotak button:hover {
+    color: black;
+}
+
+/* Profil */
+
+.profil {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.profil h1 {
+    color: var(--color-ijo);
+}
+
+.profil .kontenprofil {
+    margin: 4.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profil .kontenprofil .kepsek {
+    flex-grow: 1;
+    font-family: var(--font-roboto);
+}
+
+.kepsek p {
+    margin-bottom: 1rem;
+}
+
+.naik {
+    display: none;
+}
+
+.naik a {
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 99;
+    background-color: #0170b9;
+    padding: .8rem;
+}
+
+.naik a i {
+    color: white;
+}
+
+/* Major */
+
+.major {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.major h2 {
+    margin: 20px 0;
+}
+
+.major .kotaks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.major .kotaks .kotak {
+    font-family: var(--font-roboto);
+    color: var(--color-ijo);
+    line-height: 1.5;
+    width: 25%;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+}
+
+.major .kotaks .kotak:hover {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.major .kotaks .kotak button {
+    background-color: var(--color-ijo-muda);
+    color: white;
+    font-size: 13px;
+    font-family: var(--font-roboto);
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.major .kotaks .kotak img {
+    width: 100%;
+}
+
+.major .kotaks .kotak i {
+    margin-top: 20px;
+}
+
+/* Keunggulan */
+
+.keunggulan {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.keunggulan h3 {
+    margin: 20px 0;
+}
+
+.keunggulan .kotaks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.keunggulan .kotaks .kotak {
+    font-family: var(--font-roboto);
+    width: 30%;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+}
+
+.keunggulan .kotaks .kotak:hover {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.keunggulan .kotaks .kotak p {
+    line-height: 2;
+}
+
+.keunggulan .kotaks .kotak .yey {
+    background-color: var(--color-ijo-muda);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 35px;
+    box-sizing: border-box;
+}
+
+.keunggulan .kotaks .kotak .yey i {
+    color: white;
+}
+
+.keunggulan .kotaks .kotak .yey:hover i {
+    color: gray;
+}
+
+/* Pertanyaan dan jawaban */
+
+.aq {
+    padding: 60px 0;
+}
+
+.aq .head {
+    text-align: center;
+}
+
+.aq .question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aq .question ul{
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.aq .question ul li{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-roboto);
+    color: var(--color-ijo-muda);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.aq .question ul li i{
+    margin-right: 10px;
+}
+
+.aq .question .gambar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 50%;
+    padding: 10px;
+}
+
+.aq .question .gambar img{
+    height: 250px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+
+/* Partner */
+
+.partner {
+    margin: auto;
+}
+
+.partner p {
+    text-align: center;
+    opacity: 70%;
+    margin: 50px auto;
+}
+
+.partner .img-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.partner .button {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.partner button {
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--color-ijo-button);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    cursor: pointer;
+}
+
+.partner button:hover {
+    color: black;
+}
+
+/* Footer */
+.lokasi {
+    background-color: lightgray;
+    padding: 10px 0;
+    font-family: var(--font-roboto);
+}
+
+.lokasi .container {
+    display: flex;
+    align-items: center;
+}
+
+.lokasi .left, .lokasi .right {
+    width: 50%;
+}
+
+.lokasi .left h2 {
+    color: #0A7913;
+}
+
+.lokasi .left p {
+    margin: 10px 0;
+}
+
+.sosmed {
+    display: flex;
+    gap: 1rem;
+}
+
+.sosmed .icon {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.sosmed .icon:hover i {
+    transform: scale(1.2);
+}
+
+.sosmed>#fb {
+    background-color: #3b5998;
+}
+
+.sosmed>#yt {
+    background-color: #cd201f;
+}
+
+.sosmed>#ig {
+    background-color: #960a60;
+} 
+
+.sosmed>#wa {
+    background-color: #25d366;
+}
+
+.sosmed .icon i {
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #3a3a3a;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    margin: 10px 0;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    line-height: 2;
+}
+
+.show {
+    display:block;
+}
+
+/* Selesai */

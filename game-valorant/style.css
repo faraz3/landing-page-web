@@ -1,0 +1,424 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.header {
+    background-color: black;
+    padding: 0 30px;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+
+.header img {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto 0;
+}
+
+.header li {
+    margin: 0 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #545454;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.header .play button {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.play {
+    margin: auto 0 auto 100px;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+/* selesai */
+
+/* video */
+.background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.background video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.background .text {
+    position: absolute;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.text p {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text h1 {
+    font-size: 120px;
+    font-family: 'VALORANT', sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.text button {
+    color: white;
+    background-color: red;
+    width: 37%;
+    height: 55px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-weight: 800;
+}
+
+.text button:hover {
+    background-color: black;
+    transition: background-color .2s ease ease-in ;
+}
+/* selesai */
+
+/* home */
+.container-home h1 {
+    padding-left: 100px;
+    padding-top: 150px;
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.konten {
+    margin-left: 200px;
+    margin-top: 70px;
+    margin-right: 30px;
+    display: flex;
+}
+
+.home-text  {
+    
+    font-weight: 600;
+}
+
+.home-text p {
+    color: lightslategray;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    margin-right: 80px;
+    font-size: 13px;
+}
+
+.home-text button {
+    width: 70%;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+    margin-top: 30px;
+}
+
+.gameplay {
+    margin-left: 80px;
+}
+
+.gameplay video {
+    width: 600px;
+    height: 400px;
+}
+/* selesai */
+
+/* event */
+.event {
+    width: 100%;
+    height: 125vh;
+}
+
+.event img {
+    width: 100%;
+    position: absolute;
+}
+
+.event-text {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.event-text h1 {
+    font-size: 130px;
+    letter-spacing: 5px;
+    margin-top: 25px;
+}
+
+.event-text p {
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+.event-text button {
+    color: white;
+    background-color: red;
+    width: 60%;
+    height: 55px;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-weight: 800;
+}
+/* selesai */
+
+/* news */
+.container-news {
+    height: 700px;
+}
+
+.container-news h1 {
+    color: red;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 90px;
+    margin-left: 60px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+.news-card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.news-card p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+}
+
+.news-card p a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 20px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.news-card h3 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+/* selesai */
+
+/* agent */
+ .container-agent {
+    height: 900px;
+}
+
+.container-agent img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.agent-text {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    margin-right: 220px;
+    margin-left: 890px;
+    margin-top: 90px;
+}
+
+.agent-text h1 {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 150px;
+    font-weight: 500;
+}
+
+.agent img {
+    width: 800px;
+    padding-top: 80px;
+    z-index: 2;
+}
+
+.agent-text h3 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;    
+}
+
+.agent-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.agent-text button {
+    margin-top: 20px;
+    width: 230px;
+    height: 60px;
+    border: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+/* seelsai */
+
+/* maps */
+.container-maps {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    height: 700px;
+    margin-top: -170px;
+}
+
+.container-maps img {
+    position: absolute;
+    top: -10px;
+    right: -50px;
+    width: 100%;
+    height: 700px;
+    z-index: 2;
+}
+
+.text2 {
+    position: absolute;
+    z-index: 3;
+    top: 150px;
+    left: 150px;
+}
+
+.text2 h1 {
+    font-size: 120px;
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.text2 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text2 p {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    width: 350px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.button-maps {
+    width: 250px;
+    padding: 18px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+footer {
+    background-color: black;
+    height: 400px;
+    margin: 0;
+}
+
+.sosmed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sosmed img {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 8px;
+}
+
+.text-logo {
+    align-items: center;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-logo p {
+    padding: 0 350px;
+}
+
+.text-logo img {
+    width: 200px;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.privacy a {
+    text-decoration: none;
+    color: white;
+}
